@@ -1,7 +1,7 @@
 Verslag - SuperPy Voorraadbeheersysteem
 
 Grafieken met Matplotlib
-Een functie van het SuperPy-voorraadbeheersysteem is het gebruik van Matplotlib voor het genereren van dynamische grafieken. De plot_sold_product_count-methode maakt gebruik van Matplotlib om een staafdiagram te produceren dat de verdeling van verkochte producten over verschillende categorieën weergeeft. Deze visuele weergave biedt gebruikers een intuïtieve en gemakkelijk te begrijpen manier om trends in de verkoop te analyseren.
+Een functie van het SuperPy-voorraadbeheersysteem is het gebruik van Matplotlib voor het genereren van dynamische grafieken. De plot_sold_product_count-methode maakt gebruik van Matplotlib om een staafdiagram te produceren dat de verdeling van verkochte producten over verschillende categorieën weergeeft. Deze visuele weergave biedt gebruikers een gemakkelijk te begrijpen manier om trends in de verkoop te analyseren.
 
 Deze implementatie zorgt voor visualisatie van de verkochte producten en stelt de gebruikers in staat snel inzicht te krijgen in de verkoop van hun voorraad.
 
@@ -15,10 +15,10 @@ def plot_sold_product_count(self):
     plt.title('Verdeling van Productverkoop')
     plt.show()
 
-Persistente Datum Tracking
+Datum Tracking
 Een andere functie van SuperPy is de implementatie van datumtracking. Door gebruik te maken van een extern tekstbestand (date.txt), onthoudt het systeem de laatst geregistreerde datum, ook na het opnieuw opstarten. De methode load_current_date zorgt voor een soepele voortgang van de applicatie vanaf de laatst opgeslagen datum en vergemakkelijkt het simuleren van verschillende scenario's.
 
-Deze implementatie verbetert de bruikbaarheid van SuperPy door gebruikers in staat te stellen specifieke data-driven scenario's te modelleren en te evalueren. Bij het opstarten laadt het systeem automatisch de laatste geregistreerde datum, waardoor een naadloze gebruikerservaring ontstaat zonder handmatige tussenkomst. Dit is met name handig voor gebruikers die verschillende simulaties willen uitvoeren of historische gegevens willen analyseren zonder de noodzaak om de datum telkens handmatig in te voeren. Dit maakt de applicatie flexibel en gebruiksvriendelijk, waardoor gebruikers gemakkelijk kunnen schakelen tussen verschillende gebruiksscenario's zonder verlies van context.
+Deze implementatie verbetert de bruikbaarheid van SuperPy door gebruikers in staat te stellen specifieke data-driven scenario's te modelleren en te evalueren. Bij het opstarten laadt het systeem automatisch de laatste geregistreerde datum, waardoor eer een gebruikerservaring ontstaat zonder handmatige tussenkomst. Dit is met name handig voor gebruikers die verschillende simulaties willen uitvoeren of historische gegevens willen analyseren zonder de noodzaak om de datum telkens handmatig in te voeren. Dit maakt de applicatie flexibel en gebruiksvriendelijk, waardoor gebruikers gemakkelijk kunnen schakelen tussen verschillende gebruiksscenario's zonder verlies van context.
 
 def load_current_date(self):
     try:
